@@ -7,8 +7,7 @@
 ## Usage
 
 ```console
-$ brew tap oclint/formulae
-$ brew install oclint
+$ brew install oclint/formulae/oclint
 ```
 
 To update the brew package, use brew update first:
