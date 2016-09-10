@@ -9,6 +9,8 @@ class Oclint < Formula
   def install
     clang_version = '3.8.0'
 
+    include.install Dir['include/c++'] unless File.directory? "#{include}/c++"
+    "#{include}/c++".install Dir['include/c++/v1'] unless File.directory? "#{include}/c++/v1"
     lib.install Dir['lib/clang'] unless File.directory? "#{lib}/clang"
     "#{lib}/clang".install Dir['lib/clang/#{clang_version}'] unless File.directory? "#{lib}/clang/#{clang_version}"
     lib.install Dir['lib/oclint']
