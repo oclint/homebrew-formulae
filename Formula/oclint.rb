@@ -1,13 +1,13 @@
 class Oclint < Formula
   desc "OCLint static code analysis tool for C, C++, and Objective-C"
   homepage "http://oclint.org"
-  version '0.12'
-  sha256 '12fda8c59ddd1896880a3055b701850d89550ea686b8d82aa94fffb74220950d'
-  url "https://github.com/oclint/oclint/releases/download/v#{version}/oclint-#{version}-x86_64-darwin-16.5.0.tar.gz"
+  version '0.13'
+  sha256 '03ccf5c21abd705edfb254d037e0452490d8ce3bfb8d638cc2aa8e69e7283658'
+  url "https://github.com/oclint/oclint/releases/download/v#{version}/oclint-#{version}-x86_64-darwin-17.0.0.tar.gz"
   head "https://github.com/oclint/oclint.git"
 
   def install
-    clang_version = '4.0.0'
+    clang_version = '5.0.0'
 
     include.install Dir['include/c++'] unless File.directory? "#{include}/c++"
     "#{include}/c++".install Dir['include/c++/v1'] unless File.directory? "#{include}/c++/v1"
