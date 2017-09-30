@@ -2,8 +2,8 @@ class Oclint < Formula
   desc "OCLint static code analysis tool for C, C++, and Objective-C"
   homepage "http://oclint.org"
   version '0.13'
-  sha256 '03ccf5c21abd705edfb254d037e0452490d8ce3bfb8d638cc2aa8e69e7283658'
-  url "https://github.com/oclint/oclint/releases/download/v#{version}/oclint-#{version}-x86_64-darwin-17.0.0.tar.gz"
+  sha256 '7a8a2645e47d069e17b9239e8a8f7bfee642124337ac5b451bc1ed2accd7da66'
+  url "https://github.com/oclint/oclint/releases/download/v#{version}/oclint-#{version}-x86_64-darwin-16.7.0.tar.gz"
   head "https://github.com/oclint/oclint.git"
 
   def install
