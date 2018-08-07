@@ -1,0 +1,5 @@
+os: osx
+
+script:
+  - brew cask uninstall oclint
+  - brew install Formula/oclint.rb
